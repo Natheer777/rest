@@ -1,0 +1,1194 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F7FA;
+}
+header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 15vh;
+    background: -webkit-linear-gradient(149deg, #6889ff, #c668ff
+    );
+}
+.head ul{
+    list-style: none;
+    text-align: center;
+    padding-top: 6vh;
+}
+.head ul li{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    margin:auto;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+.head ul li:hover{
+    color:deeppink;
+}
+
+.head ul li::after{
+    content: "";
+    position: absolute;
+    background-color:deeppink;
+    height: 3px;
+    width: 0;
+    left: 25px;
+    right: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.head ul li:hover:after{
+    width: 70%;
+}
+.btn{
+position: absolute;
+right: 13vh;
+top: 35%;
+
+}
+.btn1{
+padding: 7px 25px 7px 25px;
+background-color: transparent;
+border-color: white;
+color: white;
+border-radius: 10px;
+border: 3px solid;
+font-size: 15px;
+transition: 0.3s ease;
+cursor: pointer;
+margin-right: 3vh;
+}
+.btn2{
+cursor: pointer;
+padding:7px 25px 7px 25px;
+background-color: deeppink;
+border-color: white;
+color: white;
+border-radius: 10px;
+font-size: 15px;
+border: 3px deeppink solid;
+}
+.btn1:hover{
+    color: deeppink;
+    border-color: white;
+    background-color: white;
+}
+.btn2:hover{
+    border-color:rgb(235, 76, 161) ;
+background-color: rgb(235, 76, 161);
+}
+header h1{
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    left: 25vh;
+    top: 20px;
+}
+.logo{
+    position: absolute;
+    top:3vh;
+    left: 10vh;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes logo{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+.sec{
+    position: relative;
+    top: 12vh;
+    width: 100%;
+    height: 95vh;
+    background: -webkit-linear-gradient(149deg, #6889ff, #c668ff
+    );
+}
+.sec h1{
+    position: absolute;
+    color: white;
+    width: 80vh;
+    top: 8vh;
+    left:10vh;
+    font-size:xxx-large;
+}
+.span{
+    color: rgb(255, 78, 172);
+}
+#text{
+    color: white;
+    text-transform: uppercase;
+}
+.img1{
+    position: absolute;
+    width: 80vh;
+    right: 15vh;
+}
+.sec p{
+    position: absolute;
+    top: 58vh;
+    left: 10vh;
+    color: white;
+    width: 90vh;
+}
+.sec button{
+    width: 30vh;
+    height: 10vh;
+    position: absolute;
+    top: 72vh;
+    left: 10vh;
+}
+.img2{
+    position: absolute;
+    top: 72vh;
+    border-radius: 10px;
+    left: 28ch;
+    width: 30vh;
+    height: 10vh;
+}
+.img3{
+    position: absolute;
+    top: 72vh;
+    border-radius: 10px;
+    left: 49.5ch;
+    width: 30vh;
+    height: 10vh;
+}
+.sec marquee{
+    position: absolute;
+    width: 70vh;
+    font-weight: bold;
+    font-size: 30px;
+    left: 10vh;
+    top: 45vh;
+    color: deeppink;
+}
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+.Products{
+    width: 100%;
+    height: 310vh;
+
+}
+.Products h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 12vh;
+    font-size: 10vh;
+    font-weight: bolder;
+    color: rgb(91, 4, 52);
+
+}
+.Products p{
+    color: rgb(68, 8, 40);
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.grid{
+    width: 80%;
+    height: 250vh;
+    display: grid;
+    margin: auto;
+    margin-top: 3vh;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(8,1fr);
+    column-gap: 30px;
+    row-gap: 14vh;
+}
+.productsnumber{
+    position: relative;
+    height: 30vh;
+    padding: 10px;
+    background-color: white;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(31 45 65 / 15%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.productsnumber:hover{
+    transform: translateY(-0.3333333333rem);
+    box-shadow: 0 0.5rem 2rem 0 rgb(31 45 65 / 25%);
+
+
+}
+.line{
+    position: absolute;
+    right: -1px;
+    top: 29vh;
+    width: 230px;
+    height: 10vh;
+    border-top: 1px transparent solid;
+    background-color: white;
+    border: 2px rgb(61, 6, 35) solid;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(49, 22, 36);
+}
+.productsnumber1{
+    background-image: url(/img/N51220172A_1.webp);
+}
+.productsnumber2{
+    background-image: url(/img/N121سشي85791A_6.webp);
+}
+.productsnumber3{
+    background-image: url(/img/N46458530A_1.webp);
+}
+.productsnumber4{
+    background-image: url(/img/N47626990A_1.webp);
+}
+.productsnumber5{
+    background-image: url(/img2/N53329954A_1.webp);
+}
+.productsnumber6{
+    background-image: url(/img/N13985344A_1.webp);
+}
+.productsnumber7{
+    background-image: url(/img/N38098275A_1.webp);
+}
+.productsnumber8{
+    background-image: url(/img/N39038284A_3.webp);
+}
+.productsnumber9{
+    background-image: url(/img/N41233388A_1.webp);
+}
+.productsnumber10{
+    background-image: url(/img/N42342017A_1.webp);
+}
+.productsnumber11{
+    background-image: url(/img/N46050203A_1.webp);
+}
+.productsnumber12{
+    background-image: url(/img/N46458530A_1.webp);
+}
+.productsnumber13{
+    background-image: url(/img2/28f1ca01-dc48-46b2-a70f-a95c49f8e1be.webp);
+}
+.productsnumber14{
+    background-image: url(/img2/N16523475A_1.webp);
+}
+.productsnumber15{
+    background-image: url(/img2/N40633051A_1.webp);
+}
+.productsnumber16{
+    background-image: url(/img2/N46366140A_1.webp);
+}
+.productsnumber17{
+    background-image: url(/img2/N47557169A_1.webp);
+}
+.productsnumber18{
+    background-image: url(/img2/N52091203A_1.webp);
+}
+.productsnumber19{
+    background-image: url(/img2/N52604412A_4.webp);
+}
+.productsnumber20{
+    background-image: url(/img2/N53329646A_1.webp);
+}
+.productsnumber21{
+    background-image: url(/img2/N53329954A_1.webp);
+}
+.productsnumber22{
+    background-image: url(/img2/N53331263A_1.webp);
+}
+.productsnumber23{
+    background-image: url(/img2/N53333824A_1.webp);
+}
+.productsnumber24{
+    background-image: url(/img2/N53331263A_1.webp);
+}
+
+
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+.evaluation{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.evaluation h1{
+    padding-top: 5vh;
+    font-size: 10vh;
+    font-weight: bolder;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(81, 13, 49);
+}
+.evaluation p{
+    text-align: center;
+    padding-top: 3vh;
+    font-size: 22px;
+}
+.how{
+    width: 80%;
+    height: 40vh;
+    display: grid;
+    margin: auto;
+    margin-top: 3vh;
+    grid-template-columns:repeat(3 ,auto);
+    column-gap: 10vh;
+}
+.how1{
+    background-image: url(/3/—Pngtree—vector\ credit\ card\ icon_4278064.png); 
+    background-size: cover;
+    background-position: center;
+}
+.how1 p{
+    position: absolute;
+    bottom: 130px;
+    left: 37vh;
+    font-weight: bolder;
+    font-size: 25px; 
+}
+.how1 h6{
+    position: absolute;
+    top: 80vh;
+    left: 26vh;
+    width: 50vh;
+    font-size: 10px;
+    opacity: 0.8;
+    padding-top:10px;
+    line-height: 1.8;
+
+}
+.how2{
+    background-image: url(/3/—Pngtree—a\ wad\ of\ dollar\ bills_3326543.png);
+    background-size: cover;
+    background-position: center;
+}
+.how2 p{
+    position: absolute;
+    bottom: 130px;
+    left: 100vh;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.how2 h6{
+    position: absolute;
+    top: 80vh;
+    left: 85vh;
+    width: 50vh;
+    font-size: 10px;
+    opacity: 0.8;
+    padding-top:10px;
+    line-height: 1.8;
+}
+.how3{
+    background-image: url(/3/cdgfd.png);
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 80%;
+    margin-top: 3vh;
+    margin-left: 3vh;
+}
+.how3 h6{
+    position: absolute;
+    top: 80vh;
+    left: 140vh;
+    width: 50vh;
+    font-size: 10px;
+    opacity: 0.8;
+    padding-top:10px;
+    line-height: 1.8;
+}
+.how3 p{
+    position: absolute;
+    bottom: 130px;
+    left: 152vh;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+.customers{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/3/wave.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.well{
+    position: absolute;
+    left: 15vh;
+    width: 80vh;
+    height: 80vh;
+}   
+.well img{
+    position: absolute;
+    width: 10vh;
+    left: 3vh;
+    top: 30px;
+}
+.well h1{
+    position: absolute;
+    top: 20vh;
+    line-height: 1.6;
+    font-size: 30px;
+    color: white;
+}
+.opama{
+    position: absolute;
+    left: 115vh;
+    width: 80vh;
+    height: 80vh;
+}
+.opama img{
+    position: absolute;
+    left: 10px;
+    width: 10vh;
+    top: 40px;
+}
+.opama h1{
+    position: absolute;
+    top: 20vh;
+    line-height: 1.6;
+    font-size: 30px;
+    color: white;
+}
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+.start{
+    position: relative;
+    width: 100%;
+    height: 28vh;
+    background: -webkit-linear-gradient(149deg, #6889ff, #c668ff );
+}
+.start button{
+    position: absolute;
+    right: 30vh;
+    top: 10vh;
+    width: 30vh;
+    height: 10vh;
+
+}
+.start h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 7vh;
+    padding-left: 7vh;
+}
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+footer{
+    width: 100%;
+    height: 35vh;
+    position: relative;
+}
+
+.foot4 ul li{
+    padding-top: 10px;
+    padding-right: 13vh;
+    list-style: none;
+    cursor: pointer;
+    color: #683131;
+}
+
+.foot4{
+    padding-left: 9vh;
+    transition: 0.1s;
+    display: flex;
+    padding-top: 10px;
+}
+
+.foot4 ul li:hover{
+    color: black;
+}
+footer img{
+    width: 40vh;
+    padding-bottom: 10px;
+    
+}
+.fot{
+    display: grid;
+    width: 10vh;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 80px;
+    cursor: pointer;
+}
+#minu{
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+}
+#minu span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: #F4F7FA;
+    border: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    margin-bottom: 5px;
+
+}
+#minu.is-active span:nth-child(1){
+    transform: translate(0px , -2px) rotate(45deg);
+}
+#minu.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translate(15px);
+}
+#minu.is-active span:nth-child(3){
+    transform: translate(-3px , 3px) rotate(-45deg);
+}
+#minu.is-active span{
+    background-color: deeppink;
+}
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+@media screen and (max-width:500px){
+    #minu{
+        display: block;
+        position: absolute;
+        right: 3vh;
+        top: 2vh;
+    }
+    .head{
+        z-index: 100;
+    }
+    .head ul{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color:rgb(247 180 180);
+    }
+     .head ul.is-active{
+        display: block;
+     }
+    .head ul li{
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+    .btn{
+        display: none;
+    }
+    .logo{
+        position: absolute;
+        left: 22vh;
+    }
+    .img1{
+      width: 11vh;
+      position: absolute;
+      top: 82.5vh;
+    }
+    .sec h1{
+        width: 70vh;
+    }
+    .sec p {
+        width:70vh ;
+    }
+    .img2{
+        position: absolute;
+        top: 84vh;
+        left: 10vh;
+    }
+    .img3{
+        position: absolute;
+        left: 43vh;
+    }
+    header h1{
+        padding-left: 10vh;
+    }
+    .Products p{
+        text-align: center;
+    }
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .line{
+        width: 29.5vh;
+    }
+    .Products p{
+        display: none;
+    }
+    .evaluation h1 {
+        text-align: center;
+    }
+    .evaluation p{
+        text-align: center;
+        width: 75vh;
+        position: absolute;
+    }
+    .evaluation{
+        height: 193vh;
+        background-color: white;
+        top: 250vh;
+    }
+    .how1{
+        position: absolute;
+        width: 40vh;
+        height: 40vh;
+        left: 20vh;
+        top: 30vh;   
+    }
+    .how2{
+        position: absolute;
+        width: 40vh;
+        height: 40vh;
+        left: 20vh;
+        top: 140vh;
+    }
+    .how3{
+        position: absolute;
+        width: 40vh;
+        height: 40vh;
+        left: 20vh;
+        top: 82vh;
+    }
+    .how p{
+        position: absolute;
+        left: -18vh;
+        top: 38vh;
+    }
+    .how3 h6{
+        position: absolute;
+        left: -4vh;
+        top: 44vh;
+    }
+    .how1 p{
+        position: absolute;
+        left: -15vh;
+        top: 32vh;
+    }
+    .how1 h6{
+        position: absolute;
+        left: -4vh;
+        top: 39vh;
+    }
+    .how2 p{
+        position: absolute;
+        left: -18vh;
+        top: 29vh;
+    }
+    .how2 h6{
+        position: absolute;
+        left: -4vh;
+        top: 40vh;
+    }
+    .customers{
+        position: absolute;
+        top: 848vh;
+        width: 100%;
+        height: 100vh;
+        background-image: url(/3/wave.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .well {
+        position: absolute;
+        top: -7vh;
+        width: 70vh;
+        left: 4vh;
+    }
+    .well h1{
+        position: absolute;
+        top: 25vh;
+        width: 70vh;
+        font-size: 20px;
+    }
+    .opama{
+        position: absolute;
+        top: 38vh;
+        width: 70vh;
+        left: 4vh;
+    }
+    .opama h1{
+        position: absolute;
+        top: 20vh;
+        width: 70vh;
+        font-size: 20px;
+    }
+    .start{
+        position: absolute;
+        top: 938vh;
+    }
+    .start h1{
+        position: absolute;
+        bottom: 17vh;
+    }
+    .start button{
+        position: absolute;
+        top: 15vh;
+        left: 25vh;
+    }
+    .foot4{
+        position: absolute;
+        top: 365vh;
+        
+    }
+    .foot4 ul li{
+        padding-right: 15px;
+        width: 10vh;
+        
+    }
+    .fot{
+        padding-left: 30px;
+    }
+    footer img{
+        display: none;
+    }
+    
+}
+@media screen and (min-width:501px) and (max-width:614px) {
+    #minu{
+        display: block;
+        position: absolute;
+        right: 3vh;
+        top: 2vh;
+    }
+    .head{
+        z-index: 100;
+    }
+    .head ul{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color:rgb(247 180 180);
+    }
+    header h1{
+        position: absolute;
+        left: 45vh;
+    }
+    .logo{
+        position: absolute;
+        left: 30vh;
+    }
+    .head ul li{
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+     .head ul.is-active{
+        display: block;
+     }
+   
+    .btn{
+        display: none;
+    }
+    .img1{
+        display: none;
+    }
+    header h1{
+        text-align: center;
+    }
+    .sec button{
+        width: 25vh;
+    }
+    .img2{
+        position: absolute;
+        width: 25vh;
+        left:37vh;
+    }
+    .img3{
+        position: absolute;
+        width: 25vh;
+        left:65vh;
+    }
+    .Products p{
+        text-align: center;
+    }
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .line{
+        width: 23vh;
+        font-size: 15px;
+    }
+    .how{
+        width: 90vh;
+        height: 29vh;
+    }
+    .how1 p{
+        position: absolute;
+        bottom: 42vh;
+        left: 9vh;
+        font-size: 20px;
+    }
+    .how2 p{
+        position: absolute;
+        bottom: 42vh;
+        left: 45vh;
+        font-size: 20px;
+    }
+    .how3 p{
+        position: absolute;
+        bottom: 42vh;
+        left: 78vh;
+        font-size: 20px;
+    }
+    .how1 h6{
+        position: absolute;
+        top: 75vh;
+        left: 5vh;
+        width: 90vh;
+        font-size: 15px;
+    }
+    .how2 h6{
+        position: absolute;
+        top: 90vh;
+        left: 5vh;
+        width: 90vh;
+        font-size: 15px;
+    }
+    .how3 h6{
+        position: absolute;
+        top: 59vh;
+        left: 5vh;
+        width: 90vh;
+        font-size: 15px;
+    }
+    .customers{
+        padding-bottom: 10vh;
+    }
+    .well {
+        position: absolute;
+        top: 540vh;
+        width: 70vh;
+        left: 4vh;
+    }
+    .well h1{
+        position: absolute;
+        top: 25vh;
+        width: 90vh;
+        font-size: 20px;
+    }
+    .opama{
+        position: absolute;
+        top: 503vh;
+        width: 70vh;
+        left: 4vh;
+    }
+    .opama h1{
+        position: absolute;
+        top: 20vh;
+        width: 90vh;
+        font-size: 20px;
+    }
+    .start{
+        width: 100%;
+        position: absolute;
+        top: 590vh;
+    }
+    .start h1{
+        position: absolute;
+        bottom: 17vh;
+    }
+    .start button{
+        position: absolute;
+        top: 15vh;
+        left: 25vh;
+    }
+    .foot4{
+        position: absolute;
+        top: 10vh;
+        
+    }
+    .foot4 ul li{
+        padding-right: 15px;
+        width: 10vh;
+        
+    }
+    .fot{
+        padding-left: 20px;
+        margin-left: 50px;
+    }
+    footer img{
+        display: none;
+    }
+    header{
+        width: 100%;
+    }
+   
+}
+@media screen and (min-width:613px) and (max-width:800px) {
+    #minu{
+        display: block;
+        position: absolute;
+        right: 3vh;
+        top: 2vh;
+    }
+    .btn{
+        display: none;
+    }
+    .head{
+        z-index: 100;
+    }
+    .head ul{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color:rgb(247 180 180);
+    }
+    .head ul li{
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+     .head ul.is-active{
+        display: block;
+     }
+    .head ul{
+        display: none;
+    }
+    .img1{
+        position: absolute;
+        left: 90vh;
+        top: 10vh;
+        width: 40vh;
+    }
+    .Products p{
+        text-align: center;
+        width: 125vh;
+    }
+    .grid{
+        width: 120vh;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .line{
+        width: 26.5vh;
+    }
+    .how{
+        width: 120vh;
+    }
+    .how1 p{
+        position: absolute;
+        bottom: 33vh;
+        left: 16vh;
+        font-size: 20px;
+    }
+    .how3 p{
+        position: absolute;
+        bottom: 33vh;
+        left:100vh;
+        font-size: 20px;
+    }
+    .how2 p{
+        position: absolute;
+        bottom: 33vh;
+        left: 60vh;
+        font-size: 20px;
+    }
+    .how1 h6{
+        position: absolute;
+        top: 68vh;
+        left: 12vh;
+        width: 30vh;
+    }
+    .how2 h6{
+        position: absolute;
+        top: 68vh;
+        left: 53vh;
+        width: 30vh;
+    }
+    .how3 h6{
+        position: absolute;
+        top: 68vh;
+        left: 93vh;
+        width: 30vh;
+    }
+    .well {
+        position: absolute;
+        top: 540vh;
+        width: 70vh;
+        left: 4vh;
+    }
+    .well h1{
+        position: absolute;
+        top: 25vh;
+        width: 120vh;
+        font-size: 20px;
+    }
+    .opama{
+        position: absolute;
+        top: 508vh;
+        width: 70vh;
+        left: 4vh;
+    }
+    .opama h1{
+        position: absolute;
+        top: 20vh;
+        width: 120vh;
+        font-size: 20px;
+    }
+    footer img{
+        display: none;
+    }
+    .start button{
+        position: absolute;
+        left: 88vh;
+        top: 8vh;
+    }
+}
+@media screen and (min-width:799px) and (max-width:1006px) {
+    #minu{
+        display: block;
+        position: absolute;
+        right: 3vh;
+        top: 2vh;
+    }
+    .btn{
+        display: none;
+    }
+    .head{
+        z-index: 100;
+    }
+    .head ul{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color:rgb(247 180 180);
+    }
+    .head ul li{
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+     .head ul.is-active{
+        display: block;
+     }
+    .head ul{
+        display: none;
+    }
+    .img1{
+        position: absolute;
+        top: 10vh;
+        right: 5vh;
+        width: 60vh;
+    }
+    .grid{
+        width: 150vh;
+    }
+    .line{
+        width: 34vh;
+    }
+    .how1 p{
+        position:absolute;
+        top: 60vh;
+        left: 30vh;
+        font-size: 17px;
+    }
+    .how2 p{
+        position:absolute;
+        top: 60vh;
+        left:77vh;
+        font-size: 17px;
+    }
+    .how3 p{
+        position:absolute;
+        top: 60vh;
+        left: 120vh;
+        font-size: 17px;
+    }
+    .how1 h6{
+        position: absolute;
+        top: 67vh;
+        left: 20vh;
+        width: 40vh;
+        
+    }
+    .how2 h6{
+        position: absolute;
+        top: 67vh;
+        left: 65vh;
+        width: 40vh;
+    }
+    .how3 h6{
+        position: absolute;
+        top: 67vh;
+        left: 112vh;
+        width: 40vh;
+    }
+    .well {
+        position: absolute;
+        top: 503vh;
+        width: 70vh;
+        left: 80vh;
+    }
+    .well h1{
+        position: absolute;
+        top: 25vh;
+        font-size: 20px;
+        font-size: 30px;
+    }
+    .opama{
+        position: absolute;
+        top: 508vh;
+        width: 70vh;
+        left: 4vh;
+    }
+    .opama h1{
+        position: absolute;
+        top: 20vh;
+        font-size: 30px;
+    }
+    footer img{
+     display: none;
+    }
+}
+

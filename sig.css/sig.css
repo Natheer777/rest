@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    background: -webkit-linear-gradient(149deg, #6889ff, #c668ff );
+}
+section{
+    width: 100%;
+    height: 150vh;
+    position: relative;
+}
+.sign{
+    width: 45%;
+    height: 150vh;
+    background-color:aliceblue;
+    float: right;
+}
+.after{
+        position: absolute;
+        top:14vh;
+        width: 12vh;
+        left: 15vh;
+        animation-name: logo;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    
+    }
+    @keyframes logo{
+        to{
+            transform:rotate(360deg);
+        }
+    }
+section h1{
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 15vh;
+    left: 30vh;
+}
+.dif{
+    position: absolute;
+    top: 30vh;
+    width: 70vh;
+    left: 22vh;
+}
+.sign h1{
+    position: absolute;
+    display: inline-block;
+    left: 120vh;
+    color: rgb(130, 7, 73);
+    font-size: 60px;
+    top: 3vh;
+}
+.goo{
+    position: absolute;
+    width: 70vh;
+    top: 25vh;
+    left: 130vh;
+    padding-top: 10vh;
+    cursor: pointer;
+}
+.gooo{
+    position: absolute;
+    width: 70vh;
+    left: 130vh;
+    top: 13vh;
+    padding-top: 10vh;
+    cursor: pointer;
+}
+.hr4{
+    color: rgb(130, 7, 73);
+    width: 19%;
+    background-color: rgb(130, 7, 73);
+    border: 2px solid;
+    left: 166vh;
+    top: 50vh;
+    border-radius: 20px;
+    position: absolute;
+    opacity: 0.7;
+
+}
+.hr5{
+    position: absolute;
+    top: 49vh;
+    left: 161vh;
+    font-size: 15px;
+    opacity: 0.7;
+}
+.hr6{
+    color: rgb(130, 7, 73);
+    position: absolute;
+    background-color:rgb(130, 7, 73) ;
+    width: 19%;
+    border: 2px solid;
+    left: 120vh;
+    top: 50vh;
+    border-radius: 20px;
+    opacity: 0.7;
+
+}
+.email{
+    position: absolute;
+    width: 70vh;
+    height: 9vh;
+    right:12vh;
+    top: 62vh;
+    font-size: 20px;
+    opacity: 0.4;
+}
+.mobile{
+    position: absolute;
+    width: 70vh;
+    height: 9vh;
+    right:12vh;
+    top: 82vh;
+    font-size: 20px;
+    opacity: 0.4;
+
+}
+.password{
+    position: absolute;
+    width: 70vh;
+    height: 9vh;
+    right:12vh;
+    top: 102vh;
+    font-size: 20px;
+    opacity: 0.4;
+
+}
+.password2{
+    position: absolute;
+    width: 70vh;
+    height: 9vh;
+    right:12vh;
+    top: 122vh;
+    font-size: 20px;
+    opacity: 0.4;
+
+}
+.o{
+    position: absolute;
+    color: rgb(130, 7, 73);
+    left:128vh;
+    top: 57vh;
+    font-size: 20px;
+}
+.oo{
+    position: absolute;
+    color: rgb(130, 7, 73);
+    left:128vh;
+    top: 77vh;
+    font-size: 20px;
+}
+.ooo{
+    position: absolute;
+    color: rgb(130, 7, 73);
+    left:128vh;
+    top: 97vh;
+    font-size: 20px;
+}
+.oooo{
+    position: absolute;
+    color: rgb(130, 7, 73);
+    left:128vh;
+    top: 117vh;
+    font-size: 20px;
+}
+button{
+    position: absolute;
+    bottom: 7vh;
+    right: 58vh;
+    cursor: pointer;
+    padding:7px 35px 7px 25px;
+    background-color: rgb(130, 7, 73);
+    border-color: white;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 3px rgb(130, 7, 73) solid;
+}
+.lore{
+    position: absolute;
+    bottom: 20vh;
+    width: 100vh;
+    color: white;
+    line-height: 5vh;
+    left: 8vh;
+    font-weight: bold;
+}
